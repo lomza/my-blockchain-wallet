@@ -1,5 +1,5 @@
 # My Blockchain Wallet
-Android project with an example call to Blockchain API and the view with wallet balance plus the list of transactions, which can be refreshed with a Toolbar action.
+Android project with an example call to Blockchain.com API and the view with wallet balance plus the list of transactions, which can be refreshed with a Toolbar action.
 Written in Kotlin using Android Studio 4.1. Beta 1, follows MVI design pattern, and uses libraries, such as Retrofit, RxJava, Hilt, Mockito, Espresso and others.
 
 <p align="middle">
