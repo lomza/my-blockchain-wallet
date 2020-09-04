@@ -1,6 +1,6 @@
-# my-blockchain-wallet
+# My Blockchain Wallet
 Android project with an example call to Blockchain API and the view with wallet balance plus the list of transactions, which can be refreshed with a Toolbar action.
-Written in Kotlin, follows MVI design pattern, and uses libraries, such as Retrofit, RxJava, Hilt, Mockito, Espresso and others.
+Written in Kotlin using Android Studio 4.1. Beta 1, follows MVI design pattern, and uses libraries, such as Retrofit, RxJava, Hilt, Mockito, Espresso and others.
 
 <p align="middle">
   <img src="my_blockchain_wallet_01.png" width="300">
@@ -30,3 +30,6 @@ The project incluces unit tests, written with Mockito and JUnit.
 The project incluces UI tests, written with Espresso and Barista.
 
 <img src="my_blockchain_wallet_ui_tests.png">
+
+#### Icons used in the app are made by:
+<a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> and  <a href="https://www.flaticon.com/authors/kiranshastry" title="Kiranshastry">Kiranshastry</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
