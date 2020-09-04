@@ -4,7 +4,9 @@
   xmlns:tools="http://schemas.android.com/tools"
   android:layout_width="match_parent"
   android:layout_height="match_parent"
-  android:padding="@dimen/small_margin"
+  android:paddingTop="@dimen/small_margin"
+  android:paddingStart="@dimen/small_margin"
+  android:paddingEnd="@dimen/small_margin"
   tools:context=".ui.activities.TransactionsListActivity">
 
   <androidx.cardview.widget.CardView
