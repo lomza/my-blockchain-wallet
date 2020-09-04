@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:padding="@dimen/small_margin"
+  tools:context=".ui.activities.TransactionsListActivity">
+
+  <androidx.cardview.widget.CardView
+    android:id="@+id/vWalletBalanceCard"
+    style="@style/CardStyle"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    app:cardUseCompatPadding="true"
+    app:contentPadding="@dimen/medium_margin"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <TextView
+      android:id="@+id/vWalletBalance"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:drawablePadding="@dimen/medium_margin"
+      android:gravity="center"
+      android:textColor="@color/purple_500"
+      android:textSize="@dimen/balance_font_size"
+      android:textStyle="bold"
+      app:drawableStartCompat="@drawable/ic_wallet"
+      app:drawableTint="@color/purple_500"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      tools:text="0.362575 BTC" />
+
+  </androidx.cardview.widget.CardView>
+
+  <TextView
+    android:id="@+id/vTransactionsHeader"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/small_margin"
+    android:layout_marginTop="@dimen/small_margin"
+    android:textSize="@dimen/header_font_size"
+    android:visibility="gone"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/vWalletBalanceCard"
+    tools:text="@string/transactions_header"
+    tools:visibility="visible" />
+
+  <androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/vTransactionsList"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:clipToPadding="false"
+    android:paddingTop="@dimen/list_padding"
+    android:scrollbars="vertical"
+    android:visibility="gone"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/vTransactionsHeader"
+    tools:itemCount="10"
+    tools:listitem="@layout/listitem_transaction"
+    tools:visibility="visible" />
+
+  <ProgressBar
+    android:id="@+id/vTransactionsProgress"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <TextView
+    android:id="@+id/vTransactionsErrorText"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="@color/purple_500"
+    android:textSize="@dimen/error_font_size"
+    android:visibility="gone"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:text="@string/load_general_error"
+    tools:visibility="visible" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

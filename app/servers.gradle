@@ -1,0 +1,12 @@
+def production = [:]
+production.api_blockchain = '"https://blockchain.info/"'
+
+def staging = [:]
+staging.api_blockchain = '"https://blockchain.info/"'
+
+def servers = [:]
+servers.API_BLOCKCHAIN = "API_BLOCKCHAIN"
+servers.production = production
+servers.staging = staging
+
+ext.servers = servers

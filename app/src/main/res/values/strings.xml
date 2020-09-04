@@ -1,0 +1,15 @@
+<resources>
+  <string name="app_name">My Blockchain Wallet</string>
+  <string name="load_general_error">Error loading transactions. Please try again.</string>
+  <string name="load_network_error">Please check your internet connection and try again.</string>
+  <string name="refresh_text">Refresh</string>
+  <string name="transactions_header">%d transactions</string>
+  <string name="hash_value">Hash: %s</string>
+  <string name="btc_value">%s BTC</string>
+  <string name="fee_value">Fee: %s BTC</string>
+  <string name="to_address">To: %s</string>
+  <string name="from_address">From: %s</string>
+  <string name="size_value">%d bytes</string>
+  <string name="received_text">RECEIVED</string>
+  <string name="sent_text">SENT</string>
+</resources>

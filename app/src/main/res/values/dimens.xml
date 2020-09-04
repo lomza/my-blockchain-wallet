@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <dimen name="list_padding">12dp</dimen>
+  <dimen name="small_margin">8dp</dimen>
+  <dimen name="medium_margin">16dp</dimen>
+
+  <dimen name="error_font_size">16sp</dimen>
+  <dimen name="header_font_size">18sp</dimen>
+  <dimen name="balance_font_size">22sp</dimen>
+  <dimen name="send_receive_font_size">16sp</dimen>
+</resources>
